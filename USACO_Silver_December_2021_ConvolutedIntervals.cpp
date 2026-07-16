@@ -28,4 +28,4 @@ int main() {
         ans += differences[k];
         cout << ans << "\n";
     }
-}
+} 
