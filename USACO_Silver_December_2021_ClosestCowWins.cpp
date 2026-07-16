@@ -16,6 +16,7 @@ long long sliding_window(int width, int num_patches, const vector<pair<int, long
     return total_max;
 }
 
+
 int main() {
     int k, m, n;
     cin >> k >> m >> n;
