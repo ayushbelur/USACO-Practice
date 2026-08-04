@@ -25,4 +25,4 @@ int main() {
     long long final_eaten = min(t - prev_day + 1, current_haybales);
     haybales_eaten += final_eaten;
     cout << haybales_eaten;
-}
+} 
