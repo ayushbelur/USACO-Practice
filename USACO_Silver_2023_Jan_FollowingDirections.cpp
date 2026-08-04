@@ -110,3 +110,4 @@ int main() {
         cout << total_cost << "\n";
     }
 }
+
