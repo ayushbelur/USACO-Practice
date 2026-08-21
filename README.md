@@ -22,7 +22,7 @@
 
 | Problem Name | Contest | Solution Link | Logic / Explanation |
 | :--- | :--- | :--- | :--- |
-| **Closest Cow Wins** | 2021 December | [View Code](./USACO_Silver_2021_Dec_ClosestCowWins.cpp) |  |
+| **Closest Cow Wins** | 2021 December | [View Code](./USACO_Silver_2021_Dec_ClosestCowWins.cpp) | *To solve this problem, we can divide the number line divided into different intervals based on the placement of Farmer Nhoj's cows. From this, we can see that for each interval, you only need two cows to claim the whole tastiness in the interval. However, placing one and saving another could be a better choice. We can try both ways in this problem. First, for each interval, we calculate the maximum tastiness a single cow can take. The maximum total area a cow can take in an interval is `length / 2`, where `length` is the size of the interval. So, to find the maximum tastiness, we can do a sliding window while making sure that the first and last patches don't exceed length / 2. We can store this value in an array or vector. To include the value of the second cow, we can just find the `total tastiness in the interval - one cow tastiness`. After storing all the values for all the intervals, we can account for the exceptions of the edge intervals, which only needs one cow to get the tastinees of the patches there. After this, we find the most valuable n cows in the array and add their tastiness, giving us the final answer.* |
 | **Connecting Two Barns** | 2021 December | [View Code](./USACO_Silver_2021_Dec_ConnectingTwoBarns.cpp) |  |
 | **Convoluted Intervals** | 2021 December | [View Code](./USACO_Silver_2021_Dec_ConvolutedIntervals.cpp) |  |
 | **Redistributing Gifts** | 2022 February | [View Code](./USACO_Silver_2022_Feb_RedistributingGifts.cpp) |  |
